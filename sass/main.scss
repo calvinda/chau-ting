@@ -11,5 +11,7 @@
 @import "theme/layout"; //基礎編排物件
 @import "theme/state"; //基礎樣式狀態
 
+@import "modules/header";
+@import "modules/footer";
 @import "modules/landing";// Landing
 
