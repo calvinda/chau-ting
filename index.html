@@ -17,41 +17,74 @@
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+
+
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script>
+        $(document).ready(function () {
+            $('.carousel').on('slid.bs.carousel', function () {
+                var carouselData = $(this).data('bs.carousel');
+                var currentIndex = carouselData.getItemIndex(carouselData.$element.find('.item.active'));
+
+                $('.carousel-nav')
+                    .removeClass('active-p')
+                    .eq(currentIndex)
+                    .addClass('active-p');
+            });
+        });
+    </script>
+
 </head>
 
 <body>
-    
+
     <header class="top-meta-bar">
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
                     <a href="#" title="">
-                        <img src="images/brand-logo.svg" alt=""/>
+                        <img src="images/brand-logo.svg" alt="" />
                     </a>
                 </div>
                 <div class="col-sm-8 text-right">
                     <ul class="main-nav">
-                        <li class="active"><a href="#" title="首頁">首頁</a></li>
+                        <li class="active">
+                            <a href="#" title="首頁">首頁</a>
+                        </li>
                         <li class="divider"></li>
-                        <li><a href="#" title="最新消息">最新消息</a></li>
+                        <li>
+                            <a href="#" title="最新消息">最新消息</a>
+                        </li>
                         <li class="divider"></li>
-                        <li><a href="#" title="活動花絮">活動花絮</a></li>
+                        <li>
+                            <a href="#" title="活動花絮">活動花絮</a>
+                        </li>
                         <li class="divider"></li>
-                        <li><a href="#" title="會訊專刊">會訊專刊</a></li>
+                        <li>
+                            <a href="#" title="會訊專刊">會訊專刊</a>
+                        </li>
                         <li class="divider"></li>
-                        <li><a href="#" title="認識張昭鼎">認識張昭鼎</a></li>
+                        <li>
+                            <a href="#" title="認識張昭鼎">認識張昭鼎</a>
+                        </li>
                         <li class="divider"></li>
-                        <li><a href="#" title="關於基金會">關於基金會</a></li>
+                        <li>
+                            <a href="#" title="關於基金會">關於基金會</a>
+                        </li>
                         <li class="divider"></li>
                         <li>
                             <a href="#" class="btn btn-primary contact-btn">
@@ -65,15 +98,215 @@
     </header>
 
 
-    <div class="contant-wrapper gray-bg">
+    <div class="content-wrapper gray-bg">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
+                    <!-- 輪撥區塊 -->
+                    <div class="Hero">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active">1</li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1">2</li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2">3</li>
+                                <li data-target="#carousel-example-generic" data-slide-to="3">4</li>
+                            </ol>
 
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="http://via.placeholder.com/800x400/DDDDDD/fff?text=01">
+                                </div>
+                                <div class="item">
+                                    <img src="http://via.placeholder.com/800x400/DDDDDD/fff?text=02">
+                                </div>
+                                <div class="item">
+                                    <img src="http://via.placeholder.com/800x400/DDDDDD/fff?text=03">
+                                </div>
+                                <div class="item">
+                                    <img src="http://via.placeholder.com/800x400/DDDDDD/fff?text=04">
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="carousel-sidebar">
+                            <div data-target="#carousel-example-generic" data-slide-to="0" class="carousel-nav active-p">
+                                <div class="carousel-item-date">
+                                    <span class="item-year">2017</span>
+                                    <b>08</b>月
+                                    <b>05</b>日
+                                </div>
+
+                                <div class="carousel-item-info">
+                                    一輩子行公益-陳忠源顧問的成功之道：用心，不貪
+                                </div>
+                            </div>
+                            <div data-target="#carousel-example-generic" data-slide-to="1" class="carousel-nav">
+                                <div class="carousel-item-date">
+                                    <span class="item-year">2017</span>
+                                    <b>08</b>月
+                                    <b>05</b>日
+                                </div>
+
+                                <div class="carousel-item-info">
+                                    在時代變局中縱身一躍的張昭鼎教授
+                                </div>
+                            </div>
+                            <div data-target="#carousel-example-generic" data-slide-to="2" class="carousel-nav">
+                                <div class="carousel-item-date">
+                                    <span class="item-year">2017</span>
+                                    <b>08</b>月
+                                    <b>05</b>日
+                                </div>
+
+                                <div class="carousel-item-info">
+                                    往事歷歷在目-寫於張老師傳記的出版之後
+                                </div>
+                            </div>
+                            <div data-target="#carousel-example-generic" data-slide-to="3" class="carousel-nav">
+                                <div class="carousel-item-date">
+                                    <span class="item-year">2017</span>
+                                    <b>08</b>月
+                                    <b>05</b>日
+                                </div>
+
+                                <div class="carousel-item-info">
+                                    李遠哲的科學探索人生：應該是沒問題的！
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--會訓專刊-->
+                    <div class="row landing-media-block">
+                        <div class="col-sm-12 text-center">
+                            <h2 class="landing-heading">會訓專刊
+                                <span>基金會會訓最新文章</span>
+                            </h2>
+
+                            <a href="#" title="" class="landing-more-btn">
+                                查看全部
+                                <i class="fa fa-th" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="landing-card-list">
+                                <div class="landing-card-item">
+                                    <div class="landing-card-img" style="background-image:url('http://via.placeholder.com/800x400/DDDDDD')">
+
+                                    </div>
+                                    <div class="landing-card-info">
+                                        <div class="info-date">2017.08.02</div>
+                                        <div class="info-text">
+                                            <h4>成功的人都是具有相同特質</h4>
+                                            <p>
+                                                成功的人都是具有相同的特質，本文要以林宏裕先生等三人的古今中外的人 物為例等，來談談他們共通性，首先要談的是北科大同窗胡信凱先生對林宏裕的 印象，胡先生對求學時期的林宏裕種種事蹟仍相當深刻，在胡先生的記憶裡，林 宏裕是一個很會唸書又有運動細胞的才子，對多才多藝的林宏裕充滿著崇拜之心，
+                                                無論是現在或求學時，胡先生非常佩服林宏裕對於電方面相關知識與技術的廣度 與深度，且理論與實務兼具。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="landing-tag-block">
+                                        <ul class="landing-tag-list">
+                                            <li class="landing-tag">
+                                                <a href="#" title="">評論</a>
+                                            </li>
+                                            <li class="landing-tag">
+                                                <a href="#" title="">書籍導讀</a>
+                                            </li>
+                                            <li class="landing-tag">
+                                                <a href="#" title="">政治</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="landing-card-item">
+                                    <div class="landing-card-img" style="background-image:url('http://via.placeholder.com/800x400/DDDDDD')">
+
+                                    </div>
+                                    <div class="landing-card-info">
+                                        <div class="info-date">2017.08.02</div>
+                                        <div class="info-text">
+                                            <h4>成功的人都是具有相同特質</h4>
+                                            <p>
+                                                成功的人都是具有相同的特質，本文要以林宏裕先生等三人的古今中外的人 物為例等，來談談他們共通性，首先要談的是北科大同窗胡信凱先生對林宏裕的 印象，胡先生對求學時期的林宏裕種種事蹟仍相當深刻，在胡先生的記憶裡，林 宏裕是一個很會唸書又有運動細胞的才子，對多才多藝的林宏裕充滿著崇拜之心，
+                                                無論是現在或求學時，胡先生非常佩服林宏裕對於電方面相關知識與技術的廣度 與深度，且理論與實務兼具。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="landing-tag-block">
+                                        <ul class="landing-tag-list">
+                                            <li class="landing-tag">
+                                                <a href="#" title="">評論</a>
+                                            </li>
+                                            <li class="landing-tag">
+                                                <a href="#" title="">書籍導讀</a>
+                                            </li>
+                                            <li class="landing-tag">
+                                                <a href="#" title="">政治</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="landing-card-item">
+                                    <div class="landing-card-img" style="background-image:url('http://via.placeholder.com/800x400/DDDDDD')">
+
+                                    </div>
+                                    <div class="landing-card-info">
+                                        <div class="info-date">2017.08.02</div>
+                                        <div class="info-text">
+                                            <h4>成功的人都是具有相同特質</h4>
+                                            <p>
+                                                成功的人都是具有相同的特質，本文要以林宏裕先生等三人的古今中外的人 物為例等，來談談他們共通性，首先要談的是北科大同窗胡信凱先生對林宏裕的 印象，胡先生對求學時期的林宏裕種種事蹟仍相當深刻，在胡先生的記憶裡，林 宏裕是一個很會唸書又有運動細胞的才子，對多才多藝的林宏裕充滿著崇拜之心，
+                                                無論是現在或求學時，胡先生非常佩服林宏裕對於電方面相關知識與技術的廣度 與深度，且理論與實務兼具。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="landing-tag-block">
+                                        <ul class="landing-tag-list">
+                                            <li class="landing-tag">
+                                                <a href="#" title="">評論</a>
+                                            </li>
+                                            <li class="landing-tag">
+                                                <a href="#" title="">書籍導讀</a>
+                                            </li>
+                                            <li class="landing-tag">
+                                                <a href="#" title="">政治</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--活動花序-->
+                    <div class="row landing-media-block">
+                        <div class="col-sm-12 text-center">
+                            <h2 class="landing-heading">活動花序
+                                <span>歷屆基金會活動精彩剪影</span>
+                            </h2>
+
+                            <a href="#" title="" class="landing-more-btn">
+                                查看全部
+                                <i class="fa fa-th" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
 
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 
@@ -81,7 +314,7 @@
         <div class="container footer-inner">
             <div class="row">
                 <div class="col-sm-12">
-                    
+
                 </div>
             </div>
         </div>

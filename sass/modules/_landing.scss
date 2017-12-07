@@ -1,5 +1,179 @@
-
-
-.contant-wrapper{
+.content-wrapper {
     min-height: 300px;
+    padding-top: 140px;
+}
+
+// Hero選單
+.Hero {
+    position: relative;
+    .carousel-sidebar {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: white;
+        @media (--pad){
+            display: none;
+        }
+        @media (--mobile){
+            display: none;
+        }
+    }
+    .carousel-inner {
+        border-radius: 5px 0 0 5px;
+        @media (--mobile){
+            border-radius: 5px;
+        }
+    }
+}
+
+.carousel {
+    min-height: 200px;
+    margin-bottom: 15px;
+}
+
+.carousel-indicators {
+    margin-left: -74%;
+    bottom: 6px;
+    @media (--mobile){
+        margin-left: -65%;
+    }
+    .active {
+        width: 24px;
+        height: 24px;
+        margin: 0;
+        background-color: #189DAB;
+        color: white;
+    }
+}
+
+.carousel-indicators li {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: white;
+    text-indent: 0;
+    line-height: 22px;
+}
+
+.carousel-nav {
+    padding: 10px 15px;
+    width: 340px;
+    height: 100px;
+    cursor: pointer;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    position: relative;
+    &:first-child {
+        border-radius: 0 5px 0 0;
+    }
+    &:last-child {
+        border-radius: 0 0 5px 0;
+    }
+    .carousel-item-date {
+        display: inline-block;
+        width: 30%;
+        .item-year {
+            display: block;
+            position: relative;
+            top: 5px;
+        }
+        b {
+            font-size: 20px;
+            margin: 0px;
+            font-weight: normal;
+            position: relative;
+            left: -1px;
+        }
+    }
+    .carousel-item-info {
+        display: inline-block;
+        width: 65%;
+        font-size: 16px;
+    }
+}
+
+.active-p {
+    background: #189DAB;
+    color: #fff;
+    &::after {
+        content: "";
+        width: 0;
+        height: 0;
+        left: -13px;
+        position: absolute;
+        border-style: solid;
+        border-width: 15.5px 17px 15.5px 0;
+        border-color: transparent #189DAB transparent transparent;
+    }
+}
+
+.landing-media-block{
+    margin-top: 40px;
+}
+
+.landing-heading{
+    font-size: 32px;
+    margin-bottom: 30px;
+    display: inline-block;
+    span{
+        display: block;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+}
+
+.landing-more-btn{
+    float: right;
+    border: 1px solid #189DAB;
+    padding: 10px 22px;
+    border-radius: 30px;
+    position: relative;
+    top: 24px;
+    right: 15px;
+    &:hover{
+        color:#333;
+    }
+}
+
+
+
+// 首頁-會訓專刊
+
+.landing-card-list{
+    display: flex;
+    justify-content:space-between;
+    @media (--mobile){
+        display: inline-block;
+    }
+
+    .landing-card-item{
+        background-color: white;
+        border-radius: 5px;
+        overflow: hidden;
+        display: inline-flex;
+        flex-wrap:wrap;
+        flex-direction:column;
+        width: calc(100% * 1/3 - 30px);
+        width: -moz-calc(100% * 1/3 - 30px);
+        width: -webkit-calc(100% * 1/3 - 30px);
+        @media (--mobile){
+            width: 100%;
+            margin: 0 0 20px;
+            float: none;
+            display: inline-block;
+        }
+    }
+
+    .landing-card-img{
+        height: 220px;
+        background-size: cover;
+    }
+    .landing-card-info{
+        padding: 25px;
+    }
+    .landing-tag-block{
+        padding: 0 25px;
+    }
+    
 }
