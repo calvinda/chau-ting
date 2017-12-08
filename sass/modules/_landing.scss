@@ -108,6 +108,8 @@
     }
 }
 
+// 會訓專刊
+
 .landing-media-block{
     margin-top: 40px;
 }
@@ -143,6 +145,7 @@
 .landing-card-list{
     display: flex;
     justify-content:space-between;
+    flex-wrap: wrap;
     @media (--mobile){
         display: inline-block;
     }
@@ -170,10 +173,97 @@
         background-size: cover;
     }
     .landing-card-info{
-        padding: 25px;
+        padding: 25px 25px 0;
+
+        .info-date{
+            font-size: 16px;
+            color:black;
+        }
+        .info-text{
+            h4{
+                font-size: 24px;
+                margin: 26px 0;
+                color:black;
+            }
+            p{
+                font-size: 16px;
+                color: #7d7d7d;
+                line-height: 27px;
+                overflow: hidden;
+                height: 190px;
+            }
+        }
     }
     .landing-tag-block{
         padding: 0 25px;
+        margin: 18px 0;
+        .landing-tag-list{
+
+            .landing-tag{
+                float: left;
+                margin: 0 10px 0 0;
+                background-color: #189DAB;
+                padding: 1px 5px;
+                border-radius: 3px;
+                a{
+                    color:white;
+                }
+            }
+        }
     }
     
+}
+
+
+// 活動花序
+
+.landing-grid-thumbnail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin-bottom: 40px;
+ 
+    .thumbnail-item{
+        a{
+            color:white;
+        }
+        height: 220px;
+        margin: 10px 0;
+        width: calc(100% * 1/3 - 14px);
+        width: -moz-calc(100% * 1/3 - 14px);
+        width: -webkit-calc(100% * 1/3 - 14px);
+        background-size: cover;
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+
+        @media (--mobile){
+            width: 100%;
+            margin: 0 0 20px;
+            float: none;
+            display: inline-block;
+        }
+
+        &::after{
+            content:"";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(-180deg, rgba(0,0,0,0.30) 67%, rgba(0,0,0,0.90) 100%);
+        }
+    }
+
+    .thumbnail-content{
+        position: absolute;
+        z-index: 10;
+        padding: 22px;
+        bottom: 0;
+        .thumbnail-date{
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .thumbnail-text{
+            font-size: 16px;
+        }
+    }
 }
