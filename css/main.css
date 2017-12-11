@@ -936,6 +936,9 @@ fieldset[disabled] .btn-link:hover {
   left: 0;
   right: 0;
   z-index: 100; }
+  @media (min-width: 768px) and (max-width:991px) {
+    .top-meta-bar {
+      display: none; } }
   @media (max-width: 767px ) {
     .top-meta-bar {
       display: none; } }
@@ -1007,6 +1010,11 @@ fieldset[disabled] .btn-link:hover {
       letter-spacing: 1px; }
       .mobile-full-nav-list ul li:active {
         color: #189DAB; }
+      @media (min-width: 768px) and (max-width:991px) {
+        .mobile-full-nav-list ul li {
+          font-size: 26px;
+          margin: 24px;
+          letter-spacing: 2px; } }
   .mobile-full-nav-list a {
     color: white; }
   .mobile-full-nav-list .menu-close-btn {
@@ -1015,6 +1023,9 @@ fieldset[disabled] .btn-link:hover {
     top: 17px;
     color: white;
     font-size: 20px; }
+    @media (min-width: 768px) and (max-width:991px) {
+      .mobile-full-nav-list .menu-close-btn {
+        font-size: 34px; } }
   .mobile-full-nav-list.active {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1323,7 +1334,8 @@ footer {
           align-items: center; }
   .CTA-block-bottom h2 {
     font-size: 36px;
-    font-weight: 400; }
+    font-weight: 400;
+    line-height: 48px; }
   .CTA-block-bottom p {
     max-width: 60%;
     display: inline-block;
@@ -1349,6 +1361,9 @@ footer {
   min-height: 300px;
   padding-top: 85px;
   padding-bottom: 50px; }
+  @media (min-width: 768px) and (max-width:991px) {
+    .content-wrapper {
+      padding-top: 64px; } }
   @media (max-width: 767px ) {
     .content-wrapper {
       padding-top: 64px; } }
@@ -1460,7 +1475,8 @@ footer {
   .contact-us h2 {
     font-size: 30px;
     margin-bottom: 30px; }
-  .contact-us h2, .contact-us p {
+  .contact-us h2,
+  .contact-us p {
     text-align: center;
     color: white; }
   .contact-us p {
@@ -1528,10 +1544,13 @@ footer {
 
 .article-content-img img {
   width: 80%; }
+  @media (min-width: 768px) and (max-width:991px) {
+    .article-content-img img {
+      width: 100%; } }
 
 .history-event-list div {
   margin: 8px 0px 0;
-  padding: 10px 0 20px;
+  padding: 5px 0 14px;
   border-bottom: 1px solid #ddd;
   padding-left: 9px; }
 
@@ -1542,8 +1561,23 @@ footer {
     .history-event-list span {
       width: 100%; } }
 
+.history-event-list .enent-list-title {
+  font-weight: bold;
+  font-size: 20px; }
+  .history-event-list .enent-list-title i {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    float: right; }
+
 .history-event-list .enent-list-head {
   font-weight: bold; }
+
+@media (min-width: 768px) and (max-width:991px) {
+  .history-event-list .event-info {
+    max-width: 280px;
+    vertical-align: top; } }
 
 .history-event-list .event-date {
   font-size: 20px;
@@ -1554,6 +1588,11 @@ footer {
     font-style: normal;
     letter-spacing: 1px;
     padding-left: 4px; }
+
+.history-event-list .event-position {
+  font-size: 14px;
+  font-style: normal;
+  min-width: 180px; }
 
 .history-event-list .event-item {
   font-size: 14px;

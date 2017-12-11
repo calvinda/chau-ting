@@ -2,11 +2,12 @@
     min-height: 300px;
     padding-top: 85px;
     padding-bottom: 50px;
-
-    @media(--mobile){
+    @media(--pad) {
         padding-top: 64px;
     }
-
+    @media(--mobile) {
+        padding-top: 64px;
+    }
     .breadcrumb {
         color: black;
         margin-top: 20px;
@@ -111,10 +112,8 @@
     }
 }
 
-
 // 聯絡我們
-
-.contact-us{
+.contact-us {
     background: transparent url('../images/contact-bg.jpg')no-repeat 0 0;
     background-size: cover;
     width: 100%;
@@ -123,19 +122,20 @@
     display: flex;
     align-items: center;
     background-position: 50%;
-
     text-align: center;
-
-    h2{
+    h2 {
         font-size: 30px;
         margin-bottom: 30px;
     }
-    h2,p{
+    h2,
+    p {
         text-align: center;
-        color:white;
+        color: white;
     }
-    p{font-size: 16px;}
-    .contact-info{
+    p {
+        font-size: 16px;
+    }
+    .contact-info {
         background-color: white;
         padding: 20px;
         color: #333;
@@ -143,16 +143,15 @@
         width: 450px;
         margin: 40px auto;
         border-radius: 5px;
-
-        @media (--mobile){
+        @media (--mobile) {
             width: 100%;
         }
-        ul{
+        ul {
             margin: 0;
-            li{
+            li {
                 margin: 8px 0;
                 font-size: 16px;
-                span{
+                span {
                     font-weight: bold;
                 }
             }
@@ -160,10 +159,8 @@
     }
 }
 
-
 // 關於教授
-
-.banner-about-professor{
+.banner-about-professor {
     background: transparent url('../images/professor-banner-bg.jpg')no-repeat 0 0;
     background-size: cover;
     display: flex;
@@ -175,7 +172,7 @@
         font-size: 36px;
         font-weight: 400;
         line-height: 50px;
-        span{
+        span {
             font-size: 24px;
             position: relative;
             top: -3px;
@@ -189,57 +186,74 @@
         line-height: 30px;
     }
 }
-.article-content{
-    margin-top: 30px;
 
-    strong{
+.article-content {
+    margin-top: 30px;
+    strong {
         font-size: 20px;
         color: #189DAB;
         display: inline-block;
     }
-
-    h3{
+    h3 {
         font-size: 32px;
         margin: 20px 0 20px;
     }
-    p{
+    p {
         font-size: 14px;
         line-height: 32px;
     }
 }
-.article-content-img{
-    img{
+
+.article-content-img {
+    img {
         width: 80%;
-    }
-}
-
-
-
-// 表
-
-.history-event-list{
-
-    div{
-        margin: 8px 0px 0;
-        padding: 10px 0 20px;
-        border-bottom: 1px solid #ddd;
-        padding-left: 9px;
-    }
-    span{
-        min-width: 130px;
-        display: inline-block;
-        @media (--mobile){
+        @media (--pad){
             width: 100%;
         }
     }
+}
 
-    .enent-list-head{
+// 表
+.history-event-list {
+    div {
+        margin: 8px 0px 0;
+        padding: 5px 0 14px;
+        border-bottom: 1px solid #ddd;
+        padding-left: 9px;
+    }
+    span {
+        min-width: 130px;
+        display: inline-block;
+        @media (--mobile) {
+            width: 100%;
+        }
+    }
+    .enent-list-title {
+        font-weight: bold;
+        font-size: 20px;
+        i {
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 1px;
+            float: right;
+        }
+    }
+    .enent-list-head {
         font-weight: bold;
     }
-    .event-date{
+    .event-name {}
+    .event-info {
+
+        @media (--pad){
+            max-width: 280px;
+            vertical-align: top;
+        }
+    }
+    .event-date {
         font-size: 20px;
         font-weight: 400;
-        em{
+        em {
             font-size: 14px;
             font-weight: 400;
             font-style: normal;
@@ -247,7 +261,12 @@
             padding-left: 4px;
         }
     }
-    .event-item{
+    .event-position {
+        font-size: 14px;
+        font-style: normal;
+        min-width: 180px;
+    }
+    .event-item {
         font-size: 14px;
         font-style: normal;
     }
