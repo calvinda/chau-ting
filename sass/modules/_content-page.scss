@@ -2,6 +2,11 @@
     min-height: 300px;
     padding-top: 85px;
     padding-bottom: 50px;
+
+    @media(--mobile){
+        padding-top: 64px;
+    }
+
     .breadcrumb {
         color: black;
         margin-top: 20px;
@@ -205,5 +210,45 @@
 .article-content-img{
     img{
         width: 80%;
+    }
+}
+
+
+
+// 表
+
+.history-event-list{
+
+    div{
+        margin: 8px 0px 0;
+        padding: 10px 0 20px;
+        border-bottom: 1px solid #ddd;
+        padding-left: 9px;
+    }
+    span{
+        min-width: 130px;
+        display: inline-block;
+        @media (--mobile){
+            width: 100%;
+        }
+    }
+
+    .enent-list-head{
+        font-weight: bold;
+    }
+    .event-date{
+        font-size: 20px;
+        font-weight: 400;
+        em{
+            font-size: 14px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 1px;
+            padding-left: 4px;
+        }
+    }
+    .event-item{
+        font-size: 14px;
+        font-style: normal;
     }
 }

@@ -34,7 +34,17 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
+    <script>
+            $(document).ready(function() {    
+                $('.mobile-menu').click(function(){
+                    $('.mobile-full-nav-list').addClass('active');
+                });
+    
+                $('.menu-close-btn').click(function(){
+                    $('.mobile-full-nav-list').removeClass('active');
+                });
+            });
+    </script>
 </head>
 
 <body>
@@ -84,6 +94,56 @@
         </div>
     </header>
 
+            <!-- 手機版選單 -->
+            <div class="mobile-nav visible-xs-block">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <a class="mobile-brand-logo" href="#" title="">
+                                <img src="images/brand-logo.svg" alt="" />
+                            </a>
+                        </div>
+            
+                        <div class="col-xs-4">
+                            <span class="mobile-menu">
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="mobile-full-nav-list">
+                    <ul>
+                        <li>
+                            <a href="#" title="首頁">首頁</a>
+                        </li>
+                        <li>
+                            <a href="#" title="最新消息">最新消息</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#" title="活動花絮">活動花絮</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#" title="會訊專刊">會訊專刊</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#" title="認識張昭鼎">認識張昭鼎</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#" title="關於基金會">關於基金會</a>
+                        </li>
+                        <li>
+                            <a href="#" title="聯絡基金會">聯絡基金會</a>
+                        </li>
+                    </ul>
+            
+                    <span class="menu-close-btn">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                </div>
 
     <div class="content-wrapper gray-bg">
 

@@ -34,6 +34,20 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script>
+            $(document).ready(function() {    
+                $('.mobile-menu').click(function(){
+                    $('.mobile-full-nav-list').addClass('active');
+                });
+    
+                $('.menu-close-btn').click(function(){
+                    $('.mobile-full-nav-list').removeClass('active');
+                });
+            });
+    </script>
+
+    
+
 
 </head>
 
@@ -84,6 +98,57 @@
         </div>
     </header>
 
+    <!-- 手機版選單 -->
+    <div class="mobile-nav visible-xs-block">
+        <div class="row">
+            <div class="col-xs-8">
+                <a class="mobile-brand-logo" href="#" title="">
+                    <img src="images/brand-logo.svg" alt="" />
+                </a>
+            </div>
+
+            <div class="col-xs-4">
+                <span class="mobile-menu">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-full-nav-list">
+        <ul>
+            <li>
+                <a href="#" title="首頁">首頁</a>
+            </li>
+            <li>
+                <a href="#" title="最新消息">最新消息</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#" title="活動花絮">活動花絮</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#" title="會訊專刊">會訊專刊</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#" title="認識張昭鼎">認識張昭鼎</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#" title="關於基金會">關於基金會</a>
+            </li>
+            <li>
+                <a href="#" title="聯絡基金會">聯絡基金會</a>
+            </li>
+        </ul>
+
+        <span class="menu-close-btn">
+                <i class="fa fa-times" aria-hidden="true"></i>
+        </span>
+    </div>
+
 
     <div class="content-wrapper">
 
@@ -107,7 +172,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 col-xs-12">
+                <div class="col-md-4 col-sm-5 col-xs-12">
                     <div class="article-content">
                         <strong>認識張昭鼎</strong>
                         <h3>變動時代的知識份子</h3>
@@ -117,7 +182,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-sm-8 col-xs-12">
+                <div class="col-md-8 col-sm-7 col-xs-12">
                         <div class="article-content-img text-center">
                             <img src="images/professor-img.jpg" alt=""/>
                         </div>
@@ -125,7 +190,7 @@
             </div>
 
             <div class="row space-top-70">
-                    <div class="col-sm-4 col-sm-push-7 col-xs-12">
+                    <div class="col-sm-5 col-sm-push-6 col-xs-12">
                         <div class="article-content">
                             <strong>致力推動科學人文發展</strong>
                             <h3>李遠哲最敬重的朋友</h3>
@@ -134,7 +199,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-sm-8 col-sm-pull-4 col-xs-12">
+                    <div class="col-sm-7 col-sm-pull-5 col-xs-12">
                             <div class="article-content-img">
                                 <img src="images/professor-02.jpg" alt=""/>
                             </div>
@@ -148,17 +213,153 @@
                     <h2>事蹟年表</h2>
                     <div class="row">
                             <div class="col-sm-12">
+                                <div class="history-event-list">
+                                    <div class="enent-list-head">
+                                        <span>年份 (西元)</span>
+                                        <span>事蹟</span>
+                                    </div>
                                 
+
+                                <div class="event-list-item">
+                                    <span class="event-date">1934<em>/08/05</em></span>
+                                    <span class="event-item">出生於屏東</span>
+                                </div>
+
+                                <div class="event-list-item">
+                                    <span class="event-date">1938</span>
+                                    <span class="event-item">父張士昆先生歿</span>
+                                </div>
+
+                                <div class="event-list-item">
+                                    <span class="event-date">1940</span>
+                                    <span class="event-item">屏東市立北區仁愛國民學校</span>
+                                </div>
+
+                                <div class="event-list-item">
+                                    <span class="event-date">1947</span>
+                                    <span class="event-item">小學畢業，考入屏東中學</span>
+                                </div>
+
+                                <div class="event-list-item">
+                                    <span class="event-date">1953</span>
+                                    <span class="event-item">高中畢業，第一志願考取台大化學系</span>
+                                </div>
+
+                                <div class="event-list-item">
+                                    <span class="event-date">1957</span>
+                                    <span class="event-item">大學畢業，入清華大學原子料學研究室</span>
+                                </div>
+
+                                <div class="event-list-item">
+                                    <span class="event-date">1959</span>
+                                    <span class="event-item">母沈金倉女士歿，同年獲清華大學碩士學位</span>
+                                </div>
+
+                                <div class="event-list-item">
+                                    <span class="event-date">1960<em>/04</em></span>
+                                    <span class="event-item">獲聯合國國際原子能源總署講學金，赴日原子力研究所擔任研修員</span>
+                                </div>
+
+                                <div class="event-list-item">
+                                    <span class="event-date">1961</span>
+                                    <span class="event-item">返台，擔任清華大學原子科學研究所講師</span>
+                                </div>
+
+                                <div class="event-list-item">
+                                    <span class="event-date">1963<em>/10</em></span>
+                                    <span class="event-item">與洪麗嫣女士結婚</span>
+                                </div>
+
+                                <div class="event-list-item">
+                                    <span class="event-date">1964</span>
+                                    <span class="event-item">獲宏博獎學金赴德國曼茵茲馬克思・普郎克研究所進修；利用利用鋁-26及鈹-10同位素研究鐵隕石之宇宙線照射年齡</span>
+                                </div>
+
+                                <div class="event-list-item">
+                                    <span class="event-date">1966</span>
+                                    <span class="event-item">返台擔任清華大學化學系副教授，兼任中山科學院核能研究所研究員，開創無機化學，提升核子化學水準；</span>
+                                </div>
+
+                                <div class="event-list-item">
+                                    <span class="event-date">1968<em>/02</em></span>
+                                    <span class="event-item">獲選第八屆全國十大傑出青年；台北市科學出版事業基金會創立</span>
+                                </div>
+
+                                <div class="event-list-item">
+                                    <span class="event-date">1970</span>
+                                    <span class="event-item">任清華大學化學系主任</span>
+                                </div>
+
+                                <div class="event-list-item">
+                                    <span class="event-date">1940</span>
+                                    <span class="event-item">屏東市立北區仁愛國民學校</span>
+                                </div>
+
+                                <div class="event-list-item">
+                                    <span class="event-date">1979</span>
+                                    <span class="event-item">任中央研究院原子分子科學研究所籌備處主任</span>
+                                </div>
+
+                                <div class="event-list-item">
+                                    <span class="event-date">1982</span>
+                                    <span class="event-item">促成信誼基金會與中國化學會合作編印「化學元素週期表」；邀科學月刊原發起人林孝信回國</span>
+                                </div>
+
+                                <div class="event-list-item">
+                                    <span class="event-date">1986</span>
+                                    <span class="event-item">擔任台北縣政府縣政諮詢顧問率台灣清大教授代表訪問北京清華大學</span>
+                                </div>
+
+                                <div class="event-list-item">
+                                    <span class="event-date">1988</span>
+                                    <span class="event-item">舉辦第一屆民間科技研討會；因感冒藥誘發氣喘第一次發作</span>
+                                </div>
+
+                                <div class="event-list-item">
+                                    <span class="event-date">1990<em>/04</em></span>
+                                    <span class="event-item">舉辦第二屆民間科技研討會</span>
+                                </div>
+
+                                <div class="event-list-item">
+                                    <span class="event-date">1990<em>/04/24</em></span>
+                                    <span class="event-item">於四月二十四日清晨氣喘發作急救不治逝世，享年59歲</span>
+                                </div>
+
+                                <div class="event-list-item">
+                                    <span class="event-date">至今</span>
+                                    <span class="event-item">為了延續張昭鼎一生的學術研究，推展科技及教育，成立了「張昭鼎紀念基金會」</span>
+                                </div>
+
+                            </div>
                             </div>
                         </div>
 
                 </div>
             </div>
 
+
         </div>
     </div>
     </div>
 
+
+    <div class="CTA-block-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>認識「張昭鼎紀念基金會」</h2>
+                    <div>
+                        <p>
+                            以提昇台灣科學、文化及教育為宗旨。定期舉辦科學、文化及教育之訓練營、研討會、研習會，並設置獎學金獎勵優秀學生，贊助有關科學、文化及人才培育之研究及出版事項。
+                        </p>
+                    </div>
+                    <a href="#" title="" class="cta-large-btn">
+                        查看更多  <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="container">
