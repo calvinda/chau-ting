@@ -37,6 +37,12 @@
         font-size: 16px;
         line-height: 30px;
     }
+    @media(--pad){
+        background-position: 50%;
+    }
+    @media(--mobile){
+        background-position: 50%;
+    }
 }
 
 .content-more-btn {
@@ -123,6 +129,14 @@
     align-items: center;
     background-position: 50%;
     text-align: center;
+
+    @media(--pad){
+        margin-top: 0;
+    }
+    @media(--mobile){
+        margin-top: 0;
+    }
+
     h2 {
         font-size: 30px;
         margin-bottom: 30px;
@@ -189,6 +203,9 @@
 
 .article-content {
     margin-top: 30px;
+    @media(--pad){
+        margin-top: 0;
+    }
     strong {
         font-size: 20px;
         color: #189DAB;

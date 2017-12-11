@@ -26,6 +26,18 @@ footer{
             margin-top: 10px;
             display: inline-block;
         }
+
+        section{
+            @media(--mobile){
+                display: none;
+            }
+        }
+
+        .col-sm-4{
+            @media(--mobile){
+                text-align: center;
+            }
+        }
     }
 
     .footer-copyright{
@@ -34,4 +46,5 @@ footer{
         margin-bottom: 30px;
         color: rgb(211, 211, 211);
     }
+    
 }

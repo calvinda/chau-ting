@@ -39,6 +39,11 @@
                     padding-bottom: 5px;
                 }
             }
+            @media(--desktop){
+                float: left;
+                margin: 0px 6px;
+                font-size: 14px;
+            }
         }
     }
     .contact-btn {
@@ -46,6 +51,9 @@
         padding: 9px 16px;
         position: relative;
         top: -5px;
+        @media(--desktop){
+            padding: 6px 14px;
+        }
     }
 }
 
