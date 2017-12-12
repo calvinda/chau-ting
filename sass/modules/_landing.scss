@@ -39,7 +39,8 @@
         margin-left: -70%;
     }
     @media (--mobile){
-        margin-left: -65%;
+        margin-left: -59%;
+        bottom: 30px;
     }
     .active {
         width: 24px;
@@ -127,6 +128,9 @@
         font-size: 14px;
         margin-top: 15px;
     }
+    @media(--mobile){
+        display: block;
+    }
 }
 
 .landing-more-btn{
@@ -138,6 +142,11 @@
     right: 15px;
     &:hover{
         color:#333;
+    }
+    @media(--mobile){
+        position: relative;
+        top: 0;
+        right: 0;
     }
 }
 
@@ -151,6 +160,7 @@
     flex-wrap: wrap;
     @media (--mobile){
         display: inline-block;
+        margin-top: 40px;
     }
 
     .landing-card-item{
@@ -290,11 +300,18 @@
     text-align: center;
     color: white;
     align-items: center;
+    @media (--mobile){
+        height: 290px;
+    }
 
     h2{
         font-size: 36px;
         font-weight: 400;
         line-height: 48px;
+        @media (--mobile){
+            font-size: 22px;
+            line-height: 30px;
+        }
     }
     p{
         max-width: 60%;
@@ -303,6 +320,12 @@
         line-height: 30px;
         @media (--pad){
             max-width: 70%;
+        }
+        @media (--mobile){
+            max-width: 77%;
+            display: inline-block;
+            font-size: 13px;
+            line-height: 21px;
         }
     }
     

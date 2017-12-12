@@ -182,6 +182,11 @@
     color: white;
     align-items: center;
     margin-bottom: 45px;
+    @media(--mobile){
+        background-position: 18%;
+        height: 300px;
+        margin-bottom: 0px;
+    }
     h2 {
         font-size: 36px;
         font-weight: 400;
@@ -198,6 +203,12 @@
         display: inline-block;
         font-size: 16px;
         line-height: 30px;
+    }
+}
+.about-professor-mobile{
+    p {
+        font-size: 14px;
+        line-height: 32px;
     }
 }
 
@@ -227,6 +238,9 @@
         @media (--pad){
             width: 100%;
         }
+        @media (--mobile){
+            width: 100%;
+        }
     }
 }
 
@@ -237,6 +251,9 @@
         padding: 5px 0 14px;
         border-bottom: 1px solid #ddd;
         padding-left: 9px;
+        @media (--mobile) {
+            padding-left: 0px;
+        }
     }
     span {
         min-width: 130px;
