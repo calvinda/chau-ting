@@ -1474,9 +1474,18 @@ footer {
   @media (max-width: 767px ) {
     .post-wrapper {
       padding: 50px 20px 40px; } }
+  .post-wrapper h2 {
+    color: black;
+    margin: 5px 0 10px 0;
+    font-size: 34px; }
+  .post-wrapper .post-date {
+    display: inline-block;
+    margin-top: 12px;
+    margin-left: 3px; }
   .post-wrapper .social-share {
     min-height: 100px; }
   .post-wrapper .post-content {
+    margin-top: 20px;
     font-size: 18px;
     line-height: 30px;
     -webkit-font-smoothing: antialiased;
@@ -1538,6 +1547,8 @@ footer {
   @media (max-width: 767px ) {
     .contact-us {
       margin-top: 0; } }
+  .contact-us h4 {
+    color: #189DAB; }
   .contact-us h2 {
     font-size: 30px;
     margin-bottom: 30px; }
@@ -1614,11 +1625,14 @@ footer {
     color: #189DAB;
     display: inline-block; }
   .article-content h3 {
-    font-size: 32px;
+    font-size: 24px;
+    line-height: 30px;
+    color: black;
     margin: 20px 0 20px; }
   .article-content p {
-    font-size: 14px;
-    line-height: 32px; }
+    font-size: 16px;
+    line-height: 27px;
+    color: #444; }
 
 .article-content-img img {
   width: 80%; }
@@ -1633,7 +1647,8 @@ footer {
   margin: 8px 0px 0;
   padding: 5px 0 14px;
   border-bottom: 1px solid #ddd;
-  padding-left: 9px; }
+  padding-left: 9px;
+  font-size: 16px; }
   @media (max-width: 767px ) {
     .history-event-list div {
       padding-left: 0px; } }
@@ -1674,10 +1689,10 @@ footer {
     padding-left: 4px; }
 
 .history-event-list .event-position {
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   min-width: 180px; }
 
 .history-event-list .event-item {
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal; }
