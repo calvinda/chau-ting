@@ -20,6 +20,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
 
 
     <!-- Latest compiled and minified CSS -->
@@ -43,6 +44,13 @@
             $('.menu-close-btn').click(function() {
                 $('.mobile-full-nav-list').removeClass('active');
             });
+
+            window.sr = ScrollReveal();
+            sr.reveal('.article-content-img', { 
+                duration: 2000,
+                opacity: 0,
+                scale: 1,
+            }, 1000);
         });
     </script>
 

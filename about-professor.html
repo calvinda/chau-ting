@@ -20,6 +20,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
 
 
     <!-- Latest compiled and minified CSS -->
@@ -35,18 +36,26 @@
     <![endif]-->
 
     <script>
-            $(document).ready(function() {    
-                $('.mobile-menu').click(function(){
-                    $('.mobile-full-nav-list').addClass('active');
-                });
-    
-                $('.menu-close-btn').click(function(){
-                    $('.mobile-full-nav-list').removeClass('active');
-                });
+        $(document).ready(function() {
+            $('.mobile-menu').click(function() {
+                $('.mobile-full-nav-list').addClass('active');
             });
+
+            $('.menu-close-btn').click(function() {
+                $('.mobile-full-nav-list').removeClass('active');
+            });
+
+            window.sr = ScrollReveal();
+            sr.reveal('.article-content-img', { 
+                duration: 2000,
+                opacity: 0,
+                scale: 1,
+            }, 1000);
+
+        });
     </script>
 
-    
+
 
 
 </head>
@@ -174,14 +183,14 @@
 
             <div class="row about-professor-mobile visible-xs-block">
                 <div class="col-xs-12">
-                        <h2>
-                                張昭鼎
-                                <br>影響台灣極為重大的科學家、教育家
-                            </h2>
-                            <div>
-                                <p>張昭鼎教授為台灣台南人，民國二十三年七月八日出生，民國八十二年四月二十四日因氣喘宿疾復發而逝世。<br><br>
-                                        民國四十六年畢業於台大化學系，隨即進入清華大學原子科學研究所，攻讀放射化學，於四十八年獲得碩士學位。在台大、清華求學期間，為了砌磋學識而結交後期的同學李遠哲先生成為好友，後來更並肩為提升台灣的科學而奮門。此後經清大葉鍚溶教授之介紹而與洪麗嫣女士結縭，育有二女一子，鶼鰈情深三十年，為人所稱羨。</p>
-                            </div>
+                    <h2>
+                        張昭鼎
+                        <br>影響台灣極為重大的科學家、教育家
+                    </h2>
+                    <div>
+                        <p>張昭鼎教授為台灣台南人，民國二十三年七月八日出生，民國八十二年四月二十四日因氣喘宿疾復發而逝世。<br><br> 民國四十六年畢業於台大化學系，隨即進入清華大學原子科學研究所，攻讀放射化學，於四十八年獲得碩士學位。在台大、清華求學期間，為了砌磋學識而結交後期的同學李遠哲先生成為好友，後來更並肩為提升台灣的科學而奮門。此後經清大葉鍚溶教授之介紹而與洪麗嫣女士結縭，育有二女一子，鶼鰈情深三十年，為人所稱羨。
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -197,27 +206,28 @@
                     </div>
                 </div>
                 <div class="col-md-8 col-sm-12 col-xs-12">
-                        <div class="article-content-img text-center">
-                            <img src="images/professor-img.jpg" alt=""/>
-                        </div>
+                    <div class="article-content-img text-center">
+                        <img class="hidden-xs" src="images/professor-img.jpg" alt="" />
+                        <img class="visible-xs-inline-block" src="images/professor-xs-img.jpg" alt="" />
+                    </div>
                 </div>
             </div>
 
             <div class="row space-top-70">
-                    <div class="col-sm-12 col-md-5 col-md-push-6 col-xs-12">
-                        <div class="article-content">
-                            <strong>致力推動科學人文發展</strong>
-                            <h3>李遠哲最敬重的朋友</h3>
-                            <p>
-                                在台大求學期間，與相差兩屆的李遠哲先生成為好友，其化學領域研究卓然有成，不但開創了國內近代無機化學的研究先河，更提升了國內核子化學的水平。自大學時代即因為 對科學有同樣志趣，有同樣志趣對人生有共同理想而結為好友的張昭鼎和李遠哲，近年由於 同為國內科學發展奉獻心力而情誼益形深厚。
-                            </p>
-                        </div>
+                <div class="col-sm-12 col-md-5 col-md-push-6 col-xs-12">
+                    <div class="article-content">
+                        <strong>致力推動科學人文發展</strong>
+                        <h3>李遠哲最敬重的朋友</h3>
+                        <p>
+                            在台大求學期間，與相差兩屆的李遠哲先生成為好友，其化學領域研究卓然有成，不但開創了國內近代無機化學的研究先河，更提升了國內核子化學的水平。自大學時代即因為 對科學有同樣志趣，有同樣志趣對人生有共同理想而結為好友的張昭鼎和李遠哲，近年由於 同為國內科學發展奉獻心力而情誼益形深厚。
+                        </p>
                     </div>
-                    <div class="col-sm-12 col-md-7 col-md-pull-5 col-xs-12">
-                            <div class="article-content-img">
-                                <img src="images/professor-02.jpg" alt=""/>
-                            </div>
+                </div>
+                <div class="col-sm-12 col-md-7 col-md-pull-5 col-xs-12">
+                    <div class="article-content-img">
+                        <img src="images/professor-02.jpg" alt="" />
                     </div>
+                </div>
             </div>
 
 
@@ -225,14 +235,14 @@
                 <div class="col-sm-12">
 
                     <h2>事蹟年表</h2>
-                    <div class="row">
-                            <div class="col-sm-12">
-                                <div class="history-event-list">
-                                    <div class="enent-list-head">
-                                        <span>年份 (西元)</span>
-                                        <span>事蹟</span>
-                                    </div>
-                                
+                    <div class="row space-top-40">
+                        <div class="col-sm-12">
+                            <div class="history-event-list">
+                                <div class="enent-list-head">
+                                    <span>年份 (西元)</span>
+                                    <span>事蹟</span>
+                                </div>
+
 
                                 <div class="event-list-item">
                                     <span class="event-date">1934<em>/08/05</em></span>
@@ -345,8 +355,8 @@
                                 </div>
 
                             </div>
-                            </div>
                         </div>
+                    </div>
 
                 </div>
             </div>
