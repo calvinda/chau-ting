@@ -20,7 +20,7 @@ gulp.task('sass', function () {
       rucksackCss()   
   ];
 
-  return gulp.src('./sass/main.scss')
+  return gulp.src('./sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss(processors))
     .pipe(gulp.dest('./css'));
