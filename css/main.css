@@ -1241,10 +1241,6 @@ footer {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
@@ -1255,6 +1251,7 @@ footer {
   .landing-card-list .landing-card-item {
     background-color: white;
     border-radius: 5px;
+    margin: 0 15px;
     overflow: hidden;
     display: -webkit-inline-box;
     display: -webkit-inline-flex;
@@ -1274,7 +1271,8 @@ footer {
     @media (min-width: 768px) and (max-width:991px) {
       .landing-card-list .landing-card-item {
         width: calc(100% * 1/3 - 10px);
-        width: -webkit-calc(100% * 1/3 - 10px); } }
+        width: -webkit-calc(100% * 1/3 - 10px);
+        margin: 0 5px; } }
     @media (max-width: 767px ) {
       .landing-card-list .landing-card-item {
         width: 100%;
