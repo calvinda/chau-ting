@@ -46,11 +46,11 @@
                     .addClass('active-p');
             });
 
-            $('.mobile-menu').click(function(){
+            $('.mobile-menu').click(function() {
                 $('.mobile-full-nav-list').addClass('active');
             });
 
-            $('.menu-close-btn').click(function(){
+            $('.menu-close-btn').click(function() {
                 $('.mobile-full-nav-list').removeClass('active');
             });
         });
@@ -106,58 +106,139 @@
     </header>
 
 
-        <!-- 手機版選單 -->
-        <div class="mobile-nav visible-xs-block visible-sm-block">
-                <div class="row">
-                    <div class="col-xs-8">
-                        <a class="mobile-brand-logo" href="#" title="">
-                            <img src="images/brand-logo.svg" alt="" />
-                        </a>
-                    </div>
-        
-                    <div class="col-xs-4">
-                        <span class="mobile-menu">
+    <!-- 手機版選單 -->
+    <div class="mobile-nav visible-xs-block visible-sm-block">
+        <div class="row">
+            <div class="col-xs-8">
+                <a class="mobile-brand-logo" href="#" title="">
+                    <img src="images/brand-logo.svg" alt="" />
+                </a>
+            </div>
+
+            <div class="col-xs-4">
+                <span class="mobile-menu">
                             <i class="fa fa-bars" aria-hidden="true"></i>
                         </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-full-nav-list">
+        <ul>
+            <li>
+                <a href="#" title="首頁">首頁</a>
+            </li>
+            <li>
+                <a href="#" title="最新消息">最新消息</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#" title="活動花絮">活動花絮</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#" title="會訊專刊">會訊專刊</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#" title="認識張昭鼎">認識張昭鼎</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#" title="關於基金會">關於基金會</a>
+            </li>
+            <li>
+                <a href="#" title="聯絡基金會">聯絡基金會</a>
+            </li>
+        </ul>
+
+        <span class="menu-close-btn">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                </span>
+    </div>
+
+
+    <div class="landing-wrapper gray-bg">
+
+        <!-- 輪撥區塊 -->
+        <div class="Hero container">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active">1</li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1">2</li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2">3</li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3">4</li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <a href="#" title="">
+                            <img src="http://via.placeholder.com/800x400/DDDDDD/fff?text=01">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" title="">
+                            <img src="http://via.placeholder.com/800x400/DDDDDD/fff?text=02">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" title="">
+                            <img src="http://via.placeholder.com/800x400/DDDDDD/fff?text=03">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" title="">
+                            <img src="http://via.placeholder.com/800x400/DDDDDD/fff?text=04">
+                        </a>
                     </div>
                 </div>
             </div>
-        
-            <div class="mobile-full-nav-list">
+
+            <!-- 手機版才會出現的標題    -->
+            <div class="carousel-mobile-info">
                 <ul>
-                    <li>
-                        <a href="#" title="首頁">首頁</a>
+                    <li class="show-it">
+                        <a href="#" title="">
+                            <span class="item-year">2017年08月05日</span>
+                            <div class="carousel-item-info">
+                                一輩子行公益-陳忠源顧問的成功之道：用心，不貪
+                            </div>
+                        </a>
                     </li>
+
                     <li>
-                        <a href="#" title="最新消息">最新消息</a>
+                        <a href="#" title="">
+                            <span class="item-year">2017年08月05日</span>
+                            <div class="carousel-item-info">
+                                在時代變局中縱身一躍的張昭鼎教授
+                            </div>
+                        </a>
                     </li>
-                    <li class="divider"></li>
+
                     <li>
-                        <a href="#" title="活動花絮">活動花絮</a>
+                        <a href="#" title="">
+                            <span class="item-year">2017年08月05日</span>
+                            <div class="carousel-item-info">
+                                往事歷歷在目-寫於張老師傳記的出版之後
+                            </div>
+                        </a>
                     </li>
-                    <li class="divider"></li>
+
                     <li>
-                        <a href="#" title="會訊專刊">會訊專刊</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="#" title="認識張昭鼎">認識張昭鼎</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="#" title="關於基金會">關於基金會</a>
-                    </li>
-                    <li>
-                        <a href="#" title="聯絡基金會">聯絡基金會</a>
+                        <a href="#" title="">
+                            <span class="item-year">2017年08月05日</span>
+                            <div class="carousel-item-info">
+                                李遠哲的科學探索人生：應該是沒問題的！
+                            </div>
+                        </a>
                     </li>
                 </ul>
-        
-                <span class="menu-close-btn">
-                        <i class="fa fa-times" aria-hidden="true"></i>
-                </span>
             </div>
 
 
+<<<<<<< Updated upstream
     <div class="landing-wrapper gray-bg">
         <div class="container">
             <div class="row">
@@ -196,59 +277,62 @@
                                 </a>
                                 </div>
                             </div>
+=======
+>>>>>>> Stashed changes
 
-                        </div>
 
-
-                        <div class="carousel-sidebar">
-                            <div data-target="#carousel-example-generic" data-slide-to="0" class="carousel-nav active-p">
-                                <div class="carousel-item-date">
-                                    <span class="item-year">2017</span>
-                                    <b>08</b>月
-                                    <b>05</b>日
-                                </div>
-
-                                <div class="carousel-item-info">
-                                    一輩子行公益-陳忠源顧問的成功之道：用心，不貪
-                                </div>
-                            </div>
-                            <div data-target="#carousel-example-generic" data-slide-to="1" class="carousel-nav">
-                                <div class="carousel-item-date">
-                                    <span class="item-year">2017</span>
-                                    <b>08</b>月
-                                    <b>05</b>日
-                                </div>
-
-                                <div class="carousel-item-info">
-                                    在時代變局中縱身一躍的張昭鼎教授
-                                </div>
-                            </div>
-                            <div data-target="#carousel-example-generic" data-slide-to="2" class="carousel-nav">
-                                <div class="carousel-item-date">
-                                    <span class="item-year">2017</span>
-                                    <b>08</b>月
-                                    <b>05</b>日
-                                </div>
-
-                                <div class="carousel-item-info">
-                                    往事歷歷在目-寫於張老師傳記的出版之後
-                                </div>
-                            </div>
-                            <div data-target="#carousel-example-generic" data-slide-to="3" class="carousel-nav">
-                                <div class="carousel-item-date">
-                                    <span class="item-year">2017</span>
-                                    <b>08</b>月
-                                    <b>05</b>日
-                                </div>
-
-                                <div class="carousel-item-info">
-                                    李遠哲的科學探索人生：應該是沒問題的！
-                                </div>
-                            </div>
-                        </div>
+            <div class="carousel-sidebar">
+                <div data-target="#carousel-example-generic" data-slide-to="0" class="carousel-nav active-p">
+                    <div class="carousel-item-date">
+                        <span class="item-year">2017</span>
+                        <b>08</b>月
+                        <b>05</b>日
                     </div>
 
+                    <div class="carousel-item-info">
+                        一輩子行公益-陳忠源顧問的成功之道：用心，不貪
+                    </div>
+                </div>
+                <div data-target="#carousel-example-generic" data-slide-to="1" class="carousel-nav">
+                    <div class="carousel-item-date">
+                        <span class="item-year">2017</span>
+                        <b>08</b>月
+                        <b>05</b>日
+                    </div>
 
+                    <div class="carousel-item-info">
+                        在時代變局中縱身一躍的張昭鼎教授
+                    </div>
+                </div>
+                <div data-target="#carousel-example-generic" data-slide-to="2" class="carousel-nav">
+                    <div class="carousel-item-date">
+                        <span class="item-year">2017</span>
+                        <b>08</b>月
+                        <b>05</b>日
+                    </div>
+
+                    <div class="carousel-item-info">
+                        往事歷歷在目-寫於張老師傳記的出版之後
+                    </div>
+                </div>
+                <div data-target="#carousel-example-generic" data-slide-to="3" class="carousel-nav">
+                    <div class="carousel-item-date">
+                        <span class="item-year">2017</span>
+                        <b>08</b>月
+                        <b>05</b>日
+                    </div>
+
+                    <div class="carousel-item-info">
+                        李遠哲的科學探索人生：應該是沒問題的！
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
                     <!--活動花絮-->
                     <div class="row landing-media-block">
                         <div class="col-sm-12 text-center">

@@ -1099,12 +1099,21 @@ footer {
   min-height: 300px;
   padding-top: 140px;
   padding-bottom: 50px; }
+  @media (max-width: 767px ) {
+    .landing-wrapper {
+      padding-top: 60px; } }
 
 .Hero {
   position: relative; }
+  @media (min-width: 768px) and (max-width:991px) {
+    .Hero {
+      padding: 0; } }
+  @media (max-width: 767px ) {
+    .Hero {
+      padding: 0; } }
   .Hero .carousel-sidebar {
     position: absolute;
-    right: 0;
+    right: 15px;
     top: 0;
     background-color: white; }
     @media (min-width: 768px) and (max-width:991px) {
@@ -1125,11 +1134,37 @@ footer {
           width: 600px; } }
     @media (max-width: 767px ) {
       .Hero .carousel-inner {
-        border-radius: 5px; } }
+        border-radius: 0px; } }
+
+.carousel-mobile-info {
+  padding: 10px 22px;
+  border-bottom: 1px solid #dcdcdc;
+  background-color: white;
+  display: none; }
+  @media (max-width: 767px ) {
+    .carousel-mobile-info {
+      display: block; } }
+  .carousel-mobile-info ul li {
+    display: none; }
+    .carousel-mobile-info ul li .item-year {
+      margin-bottom: 10px;
+      display: inline-block;
+      color: #777; }
+    .carousel-mobile-info ul li .carousel-item-info {
+      font-size: 20px;
+      font-weight: 500; }
+    .carousel-mobile-info ul li a {
+      color: black; }
+    .carousel-mobile-info ul li.show-it {
+      display: inline-block; }
 
 .carousel {
   min-height: 200px;
   margin-bottom: 15px; }
+  @media (max-width: 767px ) {
+    .carousel {
+      min-height: 185px;
+      margin-bottom: 0px; } }
 
 .carousel-indicators {
   margin-left: -74%;
@@ -1140,7 +1175,7 @@ footer {
   @media (max-width: 767px ) {
     .carousel-indicators {
       margin-left: -59%;
-      bottom: 30px; } }
+      bottom: 4px; } }
   .carousel-indicators .active {
     width: 24px;
     height: 24px;
@@ -1671,9 +1706,16 @@ footer {
     font-style: normal;
     letter-spacing: 1px;
     float: right; }
+    @media (max-width: 767px ) {
+      .history-event-list .enent-list-title i {
+        position: relative;
+        top: -20px; } }
 
 .history-event-list .enent-list-head {
   font-weight: bold; }
+  @media (max-width: 767px ) {
+    .history-event-list .enent-list-head {
+      display: none; } }
 
 @media (min-width: 768px) and (max-width:991px) {
   .history-event-list .event-info {

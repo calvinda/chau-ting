@@ -2,14 +2,23 @@
     min-height: 300px;
     padding-top: 140px;
     padding-bottom: 50px;
+    @media(--mobile){
+        padding-top: 60px;
+    }
 }
 
 // Hero選單
 .Hero {
+    @media(--pad){
+        padding: 0; 
+    }
+    @media(--mobile){
+        padding: 0;
+    }
     position: relative;
     .carousel-sidebar {
         position: absolute;
-        right: 0;
+        right: 15px;
         top: 0;
         background-color: white;
         @media (--pad){
@@ -31,14 +40,50 @@
             }
         }
         @media (--mobile){
-            border-radius: 5px;
+            border-radius: 0px;
         }
+    }
+}
+
+.carousel-mobile-info{
+    padding: 10px 22px;
+    border-bottom: 1px solid #dcdcdc;
+    background-color: white;
+    display: none;
+    @media(--mobile){
+        display: block;
+    }
+    ul{
+
+        li{
+            display: none;
+            .item-year{
+                margin-bottom: 10px;
+                display: inline-block;
+                color: #777;
+            }
+            .carousel-item-info{
+                font-size: 20px;
+                font-weight: 500;
+            }
+            a{
+                color:black;
+            }
+            &.show-it{
+                display: inline-block;
+            }
+        }
+
     }
 }
 
 .carousel {
     min-height: 200px;
     margin-bottom: 15px;
+    @media (--mobile){
+        min-height: 185px;
+        margin-bottom: 0px;
+    }
 }
 
 .carousel-indicators {
@@ -49,7 +94,7 @@
     }
     @media (--mobile){
         margin-left: -59%;
-        bottom: 30px;
+        bottom: 4px;
     }
     .active {
         width: 24px;

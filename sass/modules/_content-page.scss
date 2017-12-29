@@ -292,10 +292,17 @@
             font-style: normal;
             letter-spacing: 1px;
             float: right;
+            @media (--mobile) {
+                position: relative;
+                top: -20px;
+            }
         }
     }
     .enent-list-head {
         font-weight: bold;
+        @media(--mobile){
+            display: none;
+        }
     }
     .event-name {}
     .event-info {
