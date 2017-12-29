@@ -1530,18 +1530,14 @@ footer {
       padding: 50px 20px 40px; } }
   .post-wrapper h2 {
     color: black;
-    margin: 5px 0 10px 0;
-    font-size: 34px; }
+    margin: 5px 0 40px 0;
+    font-size: 30px; }
     @media (max-width: 767px ) {
       .post-wrapper h2 {
         font-size: 18px;
         font-weight: bold; } }
   .post-wrapper .post-date {
-    display: inline-block;
-    margin-top: 12px;
-    margin-left: 3px; }
-  .post-wrapper .social-share {
-    min-height: 100px; }
+    display: inline-block; }
   .post-wrapper .post-content {
     margin-top: 20px;
     font-size: 18px;

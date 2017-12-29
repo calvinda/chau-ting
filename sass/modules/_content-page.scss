@@ -79,8 +79,8 @@
 
     h2{
         color: black;
-        margin: 5px 0 10px 0;
-        font-size: 34px;
+        margin: 5px 0 40px 0;
+        font-size: 30px;
         @media (--mobile) {
             font-size: 18px;
             font-weight: bold;
@@ -89,13 +89,8 @@
 
     .post-date{
         display: inline-block;
-        margin-top: 12px;
-        margin-left: 3px;
     }
 
-    .social-share {
-        min-height: 100px;
-    }
     .post-content {
         margin-top: 20px;
         font-size: 18px;
