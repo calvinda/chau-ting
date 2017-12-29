@@ -1132,6 +1132,10 @@ footer {
       @media (min-width: 992px) and (max-width:1199px) {
         .Hero .carousel-inner .item a {
           width: 600px; } }
+      @media (max-width: 767px ) {
+        .Hero .carousel-inner .item a {
+          width: auto;
+          height: 180px; } }
     @media (max-width: 767px ) {
       .Hero .carousel-inner {
         border-radius: 0px; } }
@@ -1143,7 +1147,9 @@ footer {
   display: none; }
   @media (max-width: 767px ) {
     .carousel-mobile-info {
-      display: block; } }
+      display: block;
+      position: relative;
+      top: -5px; } }
   .carousel-mobile-info ul li {
     display: none; }
     .carousel-mobile-info ul li .item-year {
@@ -1254,7 +1260,8 @@ footer {
     margin-top: 15px; }
   @media (max-width: 767px ) {
     .landing-heading {
-      display: block; } }
+      display: block;
+      margin-bottom: 0px; } }
 
 .landing-more-btn {
   border: 1px solid #189DAB;
@@ -1464,6 +1471,16 @@ footer {
     font-size: 16px; }
     .content-wrapper .breadcrumb a {
       color: black; }
+    @media (max-width: 767px ) {
+      .content-wrapper .breadcrumb .active {
+        max-width: 239px;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+        position: relative;
+        top: 4px; } }
 
 .banner-block-top {
   background: transparent url("../images/news-banner-bg.jpg") no-repeat 0 0;
@@ -1515,6 +1532,10 @@ footer {
     color: black;
     margin: 5px 0 10px 0;
     font-size: 34px; }
+    @media (max-width: 767px ) {
+      .post-wrapper h2 {
+        font-size: 18px;
+        font-weight: bold; } }
   .post-wrapper .post-date {
     display: inline-block;
     margin-top: 12px;
@@ -1533,6 +1554,9 @@ footer {
       line-height: 30px;
       margin-bottom: 30px;
       text-align: justify; }
+    .post-wrapper .post-content img {
+      width: 100%;
+      height: auto; }
 
 .issue-list .issue-list-item {
   background: rgba(24, 159, 171, 0.05);
@@ -1583,7 +1607,9 @@ footer {
       margin-top: 0; } }
   @media (max-width: 767px ) {
     .contact-us {
-      margin-top: 0; } }
+      margin-top: 0;
+      height: auto;
+      padding-top: 75px; } }
   .contact-us h4 {
     color: #189DAB; }
   .contact-us h2 {

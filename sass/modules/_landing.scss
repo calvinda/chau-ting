@@ -38,6 +38,10 @@
             @media (--desktop){
                 width: 600px;
             }
+            @media (--mobile){
+                width: auto;
+                height: 180px;
+            }
         }
         @media (--mobile){
             border-radius: 0px;
@@ -52,6 +56,8 @@
     display: none;
     @media(--mobile){
         display: block;
+        position: relative;
+        top: -5px;
     }
     ul{
 
@@ -184,6 +190,7 @@
     }
     @media(--mobile){
         display: block;
+        margin-bottom: 0px;
     }
 }
 
